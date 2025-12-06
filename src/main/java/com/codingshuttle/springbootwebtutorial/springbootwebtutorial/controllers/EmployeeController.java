@@ -15,12 +15,6 @@ import java.util.Optional;
 @RequestMapping(path = "/employees")
 public class EmployeeController {
 
-//    @GetMapping(path = "/getSecretMessage")
-//    public String getMySuperSecretMessage() {
-//        return "Secret message: asdfal@#$DASD";
-//    }
-
-
     private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
@@ -29,10 +23,14 @@ public class EmployeeController {
 
     @GetMapping(path = "/{employeeId}")
     public ResponseEntity<EmployeeDTO> getEmployeeById(@PathVariable(name = "employeeId") Long id) {
-        Optional<EmployeeDTO> employeeDTO = employeeService.getEmployeeById(id);
-        return employeeDTO
-                .map(employeeDTO1 -> ResponseEntity.ok(employeeDTO1))
-                .orElse(ResponseEntity.notFound().build());
+//        Optional<EmployeeDTO> employeeDTO = employeeService.getEmployeeById(id);
+//        return employeeDTO
+//                .map(employeeDTO1 -> ResponseEntity.ok(employeeDTO1))
+//                .orElse(ResponseEntity.notFound().build());
+
+        EmployeeDTO employeeDTO = employeeService.getEmployeeById(id);
+        if (employeeDTO == null) return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(employeeDTO);
     }
 
     @GetMapping
