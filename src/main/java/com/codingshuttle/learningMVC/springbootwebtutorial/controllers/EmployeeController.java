@@ -1,18 +1,15 @@
-package com.codingshuttle.springbootwebtutorial.springbootwebtutorial.controllers;
+package com.codingshuttle.learningMVC.springbootwebtutorial.controllers;
 
-import com.codingshuttle.springbootwebtutorial.springbootwebtutorial.dto.EmployeeDTO;
-import com.codingshuttle.springbootwebtutorial.springbootwebtutorial.exceptions.ResourceNotFoundException;
-import com.codingshuttle.springbootwebtutorial.springbootwebtutorial.services.EmployeeService;
+import com.codingshuttle.learningMVC.springbootwebtutorial.dto.EmployeeDTO;
+import com.codingshuttle.learningMVC.springbootwebtutorial.exceptions.ResourceNotFoundException;
+import com.codingshuttle.learningMVC.springbootwebtutorial.services.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/employees")

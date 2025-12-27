@@ -1,7 +1,6 @@
-package com.codingshuttle.springbootwebtutorial.springbootwebtutorial.dto;
+package com.codingshuttle.learningMVC.springbootwebtutorial.dto;
 
-import com.codingshuttle.springbootwebtutorial.springbootwebtutorial.annotations.PrimeValidation;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.codingshuttle.learningMVC.springbootwebtutorial.annotations.PrimeValidation;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

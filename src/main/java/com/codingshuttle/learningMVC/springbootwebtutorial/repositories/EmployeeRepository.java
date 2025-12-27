@@ -1,6 +1,6 @@
-package com.codingshuttle.springbootwebtutorial.springbootwebtutorial.repositories;
+package com.codingshuttle.learningMVC.springbootwebtutorial.repositories;
 
-import com.codingshuttle.springbootwebtutorial.springbootwebtutorial.entities.EmployeeEntity;
+import com.codingshuttle.learningMVC.springbootwebtutorial.entities.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.codingshuttle.springbootwebtutorial.springbootwebtutorial.advices;
+package com.codingshuttle.learningMVC.springbootwebtutorial.advices;
 
 
 import org.springframework.core.MethodParameter;

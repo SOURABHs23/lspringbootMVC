@@ -1,4 +1,4 @@
-package com.codingshuttle.springbootwebtutorial.springbootwebtutorial.advices;
+package com.codingshuttle.learningMVC.springbootwebtutorial.advices;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
